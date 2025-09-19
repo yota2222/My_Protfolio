@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("../images/try3.jpg");
+    url("try3.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -173,3 +173,4 @@ footer p {
     font-size: 16px;
   }
 }
+
