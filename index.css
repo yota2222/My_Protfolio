@@ -1,0 +1,175 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("../images/try3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header {
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.logo:hover {
+  color: rgb(179, 175, 150);
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  transform: scale(1.1);
+  color: rgb(179, 175, 150);
+}
+
+.portfolio-pic {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.portfolio-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgb(179, 175, 150);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  flex-direction: column;
+}
+
+.hero h1 {
+  margin-bottom: 20px;
+  color: darkgray;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  color: darkgray;
+}
+
+.btn {
+  display: inline-block;
+  background-color: rgba(8, 8, 8, 0.3);
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a19f91ad;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #a4a28c93, #1d1b1bed);
+  color: floralwhite;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .portfolio-pic {
+    margin-top: 80px;
+  }
+
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-pic img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
