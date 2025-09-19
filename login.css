@@ -1,5 +1,5 @@
 body {
-    background-image: url(../images/login.jpg);
+    background-image: url(login.jpg);
     font-family:  sans-serif;
     color: #d8ceb7 ;
     display: flex;
@@ -60,3 +60,4 @@ button {
 button:hover {
     background-color: #d8ceb7;
 }
+
